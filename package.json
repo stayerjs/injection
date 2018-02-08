@@ -1,0 +1,20 @@
+{
+  "name": "@stayer/injection",
+  "version": "0.0.1",
+  "description": "Dependency injection of the Stayer framework.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Bakhurynskyi",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.6"
+  }
+}
