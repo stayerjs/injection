@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 import injectionRegister from './injection-register';
-import InjectionOptions from './injection-options';
+import InjectionOptions from './interfaces/injection-options';
 
 function getInstancesObs(
   constructor: Function,
