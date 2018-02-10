@@ -1,3 +1,3 @@
 export default interface InjectionOptions {
-  factory: () => any,
+  factory: () => Promise<object>,
 }
