@@ -1,4 +1,4 @@
-import Injection from '../src/injection2';
+import Injection from '../src/injection';
 
 @Injection()
 export default class SyncRoot {
