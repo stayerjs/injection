@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import InjectionOptions from '../src/interfaces/injection-options';
+import InjectionOptions from './interfaces/injection-options';
 
 import injector from './bin/injector';
 

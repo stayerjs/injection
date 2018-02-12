@@ -41,7 +41,7 @@ export default class Injector implements InjectorInterface {
     this.register.set(constructor, instance$);
   }
 
-  private getInstanceObs(constructor: Function): Observable<object> {
+  getInstanceObs(constructor: Function): Observable<object> {
     const instance$ = this.register.get(constructor);
     if (!instance$) {
       throw new Error(`An instance of ${constructor.name} doesn't exist.`);
