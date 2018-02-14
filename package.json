@@ -1,14 +1,15 @@
 {
   "name": "@stayer/injection",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Dependency injection of the Stayer framework.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "build:watch": "tsc -w",
     "pretest": "npm run build",
-    "test": "tsc -w & mocha --watch dist/test",
-    "test:integration": "tsc && mocha dist/test",
+    "test": "npm run build:watch & mocha --watch dist/test",
+    "test:integration": "npm run build && mocha dist/test",
     "prepublish": "npm run build"
   },
   "author": "Anton Bakhurynskyi",
@@ -25,7 +26,7 @@
     "typescript": "^2.7.1"
   },
   "dependencies": {
-    "@stayer/interfaces": "0.0.11",
+    "@stayer/interfaces": "0.0.15",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^5.5.6"
   }
